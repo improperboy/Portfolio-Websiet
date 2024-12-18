@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background-color: transparent;
+        }
+        .logo {text-decoration: none;
+            font-size: 3rem;
+            color: #b74b4b;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+        nav a {text-decoration: none;
+            font-size: 1.8rem;
+            color: white;
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        nav a:hover,
+        nav a.active {
+            color: #b74b4b;
+            border-bottom: 3px solid #b74b4b;
+        }
+        section {
+            padding: 12rem 9%;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        .project-card {
+            background-color: #161616;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .project-title {
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #b74b4b;
+            margin-bottom: 1rem;
+        }
+        .project-desc {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1.4rem;
+            color: #b74b4b;
+            border: 2px solid #b74b4b;
+            border-radius: 4rem;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #b74b4b;
+            color: black;
+            box-shadow: 0 0 25px #b74b4b;
+        }
+    </style>
+    <title>Projects</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Ansh</a>
+        <nav>
+            <a href="portfolio.htm">Home</a>
+            <a href="skill.htm">Skills</a>
+            <a href="project.htm" class="active">Projects</a>
+            <a href="Resume.html" >Resume</a>
+            <a href="ContactSection.html">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <h1 class="section-title">My Projects</h1>
+        <div class="projects">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="Screenshot 2024-12-18 142731.png" alt="Project 1">
+                <div class="project-content">
+                    <h2 class="project-title">Restaurant Menu</h2>
+                    <p class="project-desc">A basic restaurant menu built only with HTML.</p>
+                    <a href="resturantmenu.htm" target="_blank" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="Screenshot 2024-12-18 142609.png" alt="Project 2">
+                <div class="project-content">
+                    <h2 class="project-title">Portfolio Website</h2>
+                    <p class="project-desc">This is my personal portfolio website created using HTML, CSS, and JavaScript. It showcases my skills, projects, and experience in web development.</p>
+                    <a href="portfolio.htm" target="_blank" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="careergaze.png" alt="Project 3">
+                <div class="project-content">
+                    <h2 class="project-title">Career Gaze</h2>
+                    <p class="project-desc">Career Gaze is a web application that helps individuals discover and track career opportunities in various industries..</p>
+                    <a href="index.html" target="_blank" class="btn">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
